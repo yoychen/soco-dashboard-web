@@ -1,0 +1,31 @@
+.ui.container.setting-page {
+  padding: 3em;
+  max-width: 600px !important;
+  .ui.segment {
+    margin-bottom: 1.3em;
+    opacity: 0;
+    animation: 0.35s card-in both;
+    animation-timing-function: cubic-bezier(0.6, 0.11, 0.84, 1.61);
+  }
+  .my-radio {
+    input[type='radio'] {
+      visibility: hidden;
+    }
+    input:checked + label {
+      border: 2px dashed #24b7e1;
+      padding: 3px 11px;
+    }
+    label {
+      padding: 5px 13px;
+      border-radius: 32px;
+      display: inline-block;
+      img {
+        width: 1em;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .ui.container.setting-page {}
+}

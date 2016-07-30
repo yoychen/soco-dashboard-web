@@ -1,0 +1,67 @@
+@keyframes achieve-lock-in {
+  from {
+    transform: rotate(-45deg) translateY(5px);
+    opacity: 0;
+  }
+  80%{
+    transform: rotate(-18deg) translateY(-3px);
+  }
+  to {
+    transform: rotate(-21deg);
+    opacity: 1;
+  }
+}
+@keyframes achieve-done-in {
+  from {
+    transform: scale(0.8) translate(3px,11px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translate(3px,6px);
+    opacity: 1;
+  }
+}
+@keyframes achieve-image-in {
+  from {
+    transform: scale(0.8) translate(-25px, 7px);;
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translate(-25px, 7px);;
+    opacity: 1;
+  }
+}
+@keyframes achieve-content-in {
+  from {
+    transform-origin: 0 50%;
+    transform: scale(1) translateY(1.2em);
+    opacity: 0;
+  }
+  to {
+    transform-origin: 0 50%;
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes achieve-addition-in {
+  from {
+    transform-origin: 0 50%;
+    transform: scale(1) translateY(-1.2em);
+    opacity: 0;
+  }
+  to {
+    transform-origin: 0 50%;
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes card-in {
+  from {
+    transform: scale(0.8) translateY(1.2em);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
