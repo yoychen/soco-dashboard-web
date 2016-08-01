@@ -1,0 +1,104 @@
+.panel {
+  background-color: white;
+  margin-top: 1em;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 1px 2px #c7c7c7;
+  .panel-title {
+    padding: 0.8em 0.8em 0.5em;
+    // background-color: #40c3ff;
+    h5 {
+      font-size: 1.2em;
+      margin: 5px 0.5em;
+      padding-bottom: 0.8em;
+      border-bottom: 3px solid #eaeaea;
+      i {
+        margin-right: 8px;
+        color: #247fc7;
+        font-size: 1.3em;
+        float: left;
+      }
+    }
+  }
+  .news-item {
+    margin: 1.3em 1.2em;
+    border-bottom: 1px dashed #e2e2e2;
+    padding-bottom: 15px;
+    &:nth-child(2) {
+      margin-top: 12px;
+    }
+    .news-date {
+      width: 50px;
+      float: left;
+      h5 {
+        font-size: 1.5em;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 2px;
+      }
+      span {
+        display: block;
+        text-align: center;
+      }
+    }
+    .news-content {
+      margin-left: 63px;
+      h6 {
+        margin: 0 0 7px;
+        font-size: 1.2em;
+        font-family: Lato;
+      }
+    }
+  }
+  .anno-item {
+    margin: 1.3em 1.5em;
+    border-bottom: 1px dashed #e2e2e2;
+    padding-bottom: 11px;
+    &:nth-child(2) {
+      margin-top: 12px;
+    }
+    .anno-title {
+      margin-bottom: 5px;
+      h5 {
+        margin: 0;
+        font-size: 1.2em;
+        font-family: Lato;
+      }
+      span {
+        font-size: 8px;
+        color: dimgrey;
+      }
+    }
+    .anno-content {
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 240px;
+      }
+    }
+  }
+  .check-item {
+    color: #2f4a56;
+    margin: 1.3em 1.2em;
+    padding: 8px 13px;
+    background: #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.38);
+    &:nth-child(2) {
+      margin-top: 12px;
+    }
+    .check-box {
+      width: 14px;
+      height: 14px;
+      background: #bfbfbf;
+      float: left;
+      margin: 5px 0;
+      border-radius: 2px;
+    }
+    p {
+      margin-left: 23px;
+    }
+  }
+}

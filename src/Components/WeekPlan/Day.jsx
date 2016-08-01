@@ -3,14 +3,14 @@ var Day = React.createClass({
     return (
       <div className="wp-day">
         <div className="weekday">
-          {new Date(this.props.data.date).getUTCDay()}
+          {this.props.data.day}
           <span>{new Date(this.props.data.date).toLocaleDateString()}</span>
         </div>
         <div className="day-content">
           {
             this.props.data.info.map(function (e, i) {
               return (
-                <div>
+                <div key={i} >
                   <span className="wp-text">{e.text}</span>
                   <span className="wp-num">{e.num}</ span>
                 </div>

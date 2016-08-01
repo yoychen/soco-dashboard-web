@@ -1,0 +1,87 @@
+.wp-week {
+  display: flex;
+  position: relative;
+  margin-top: 1em;
+  &:before {
+    // content: '';
+    // width: 100%;
+    // height: 2px;
+    // background: gray;
+    // position: absolute;
+    // top: 0.5em;
+    // z-index: -1;
+    content: '';
+    width: 100%;
+    height: 6px;
+    background: rgba(212, 212, 212, 0.55);
+    // background: #565656;
+    position: absolute;
+    top: 4px;
+    z-index: -1;
+    border-radius: 3px;
+  }
+  .wp-day {
+    flex: 1;
+    margin: 2em 4px;
+    position: relative;
+    &.today {
+      .weekday {
+        border-bottom: 2px solid #258ae0;
+        padding: 0.5em 0.5em 6px;
+      }
+    }
+    &:before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: -26px;
+      left: 0.8em;
+      border-radius: 50%;
+      border: 3px solid #c19763;
+    }
+    &:after {
+      content: '';
+      width: 2px;
+      height: 2em;
+      background: #b3b3b3;
+      position: absolute;
+      top: -15px;
+      left: 1.1em;
+      z-index: -1;
+    }
+    .weekday {
+      // width: 50px;
+      // height: 50px;
+      // text-align: center;
+      // line-height: 50px;
+      // background: #d4d4d4;
+      // border-radius: 50%;
+      // font-size: 2em;
+      // margin: auto;
+      border-bottom: 1px solid #e8e8e8;
+      background: white;
+      padding: 0.5em 0.5em 7px;
+      font-size: 1.3em;
+      line-height: 1em;
+      margin-top: 0.5em;
+      span {
+        font-size: 8px;
+        float: right;
+        line-height: 2em;
+      }
+    }
+    .day-content {
+      background: white;
+      // margin-right: 1em;
+      border-radius: 0 0 2px 2px;
+      padding: 10px;
+      height: 80px;
+      overflow: auto;
+      .wp-num {
+        margin-left: 0.5em;
+        color: #2196F3;
+      }
+    }
+  }
+}

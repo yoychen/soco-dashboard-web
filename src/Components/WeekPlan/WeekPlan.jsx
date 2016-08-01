@@ -8,6 +8,7 @@ var WeekPlan = React.createClass({
       weeks: [
         {
           date: 1314564645,
+          day: '日',
           info:[
             {
               text: 'gfgsgd',
@@ -19,6 +20,7 @@ var WeekPlan = React.createClass({
           ]
         },{
         date: 1314564645,
+        day: '一',
           info:[
               {
                 text: 'gfgsgd',
@@ -30,6 +32,7 @@ var WeekPlan = React.createClass({
             ]
           },{
           date: 1314564645,
+          day: '二',
             info:[
                 {
                   text: 'gfgsgd',
@@ -41,6 +44,7 @@ var WeekPlan = React.createClass({
               ]
             },{
             date: 1314564645,
+            day: '三',
               info:[
                   {
                     text: 'gfgsgd',
@@ -52,6 +56,7 @@ var WeekPlan = React.createClass({
                 ]
               },{
               date: 1314564645,
+              day: '四',
                 info:[
                     {
                       text: 'gfgsgd',
@@ -63,6 +68,7 @@ var WeekPlan = React.createClass({
                   ]
                 },{
                 date: 1314564645,
+                day: '五',
                   info:[
                       {
                         text: 'gfgsgd',
@@ -72,7 +78,19 @@ var WeekPlan = React.createClass({
                         num: 29
                       }
                     ]
-                  }
+                  },{
+                  date: 1314564645,
+                  day: '六',
+                    info:[
+                        {
+                          text: 'gfgsgd',
+                          num: 29
+                        },{
+                          text: 'gfgsgd',
+                          num: 29
+                        }
+                      ]
+                    }
       ]
     }
   },

@@ -1,5 +1,9 @@
-require('./indexPage.scss');
-var WeekPlan = require('../WeekPlan/WeekPlan');
+require('./IndexPage.scss');
+var WeekPlan = require('../Components/WeekPlan/WeekPlan');
+var Panel = require('../Components/Panel/Panel');
+var News = require('../Components/Panel/News');
+var Announcement = require('../Components/Panel/Announcement');
+var CheckItem = require('../Components/Panel/CheckItem');
 var Link = require('react-router').Link;
 
 var IndexPage = React.createClass({
@@ -19,6 +23,17 @@ var IndexPage = React.createClass({
     return (
       <div className="ui container fluid index-page">
         <WeekPlan />
+        <div className="row">
+          <div className="col-3">
+            <Panel title='新聞消息' item={News} icon='newspaper' />
+          </div>
+          <div className="col-3">
+            <Panel title='公告事項' item={Announcement} icon='announcement' />
+          </div>
+          <div className="col-2">
+            <Panel title='工作留言板' item={CheckItem} icon='checkmark box' />
+          </div>
+        </div>
       </div>
     );
   },
