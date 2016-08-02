@@ -5,14 +5,15 @@ var ReactRouter = require('react-router'),
 
 var App = require('App.jsx');
 var IndexPage = require('Pages/IndexPage.jsx');
-var SettingPage = require('Pages/SettingPage.jsx');
-// var AboutPage = require('About/AboutPage.jsx');
+var ManufacturePage = require('Pages/ManufacturePage.jsx');
+var WillOnlinePage = require('Pages/WillOnlinePage.jsx');
+
 
 var routes = (
   <Route path="/" component={App}>
     <IndexRoute component={IndexPage}/>
-    <Route path="achieve" component={IndexPage}/>
-    <Route path="setting" component={SettingPage}/>
+    <Route path="manufacture" component={ManufacturePage}/>
+    <Route path="willonline" component={WillOnlinePage}/>
   </Route>
 );
 

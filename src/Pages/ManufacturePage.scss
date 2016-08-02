@@ -1,0 +1,28 @@
+.ui.container.manufacture-page {
+  padding: 1.2em 3em;
+  table {
+    th {
+      text-align: center;
+      &.sub-title {
+        padding: 7px 0 3px;
+        font-weight: 200;
+      }
+    }
+    tbody {
+      border-bottom: 1px solid rgba(34,36,38,.1);
+      select.ui {
+        background: #f9fafb;
+        border-radius: 3px;
+      }
+      &.done {
+        background: #eae5b8;
+        select.dropdown {
+          background: #eae5b8;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .ui.container.setting-page {}
+}

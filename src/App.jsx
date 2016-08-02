@@ -24,9 +24,9 @@ var App = React.createClass({
       <div>
 
         <div className={this.state.toggle?"ui menu large open":"ui menu large"}>
-          <div className="item logo">
+          <Link to='/' className="item logo">
             SOCO
-          </div>
+          </Link>
           <div className="right menu">
             <div className="ui toggle item" onClick={()=>this.setState({toggle:!this.state.toggle})}>
               <i className="content icon"></i>
@@ -36,10 +36,13 @@ var App = React.createClass({
 
         <div className={this.state.toggle?"side-menu open":"side-menu"} >
           <div className="group-menu">
-            <Link className="sd-item" to='/achieve' activeClassName='active'>
+            <Link className="sd-item" to='/' activeClassName='active'>
+              <span><i className="dashboard icon"></i></span>主頁
+            </Link>
+            <Link className="sd-item" to='/manufacture' activeClassName='active'>
               <span><i className="list icon"></i></span>製令清單
             </Link>
-            <Link className="sd-item" to='/setting' activeClassName='active'>
+            <Link className="sd-item" to='/willonline' activeClassName='active'>
               <span><i className="calendar icon"></i></span>預計上線
             </Link>
           </div>
