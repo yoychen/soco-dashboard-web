@@ -1,6 +1,9 @@
 .ui.container.willonline-page {
   padding: 1.2em 5em;
   table {
+    animation: table-in 0.3s both;
+    transition-timing-function: ease-in;
+    opacity: 0;
     th {
       text-align: center;
       &.sub-title {

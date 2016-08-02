@@ -19,11 +19,17 @@
     top: 4px;
     z-index: -1;
     border-radius: 3px;
+    animation: bar-in 0.3s both;
+    transition-timing-function: ease-in-out;
+    opacity: 0;
   }
   .wp-day {
     flex: 1;
     margin: 2em 4px;
     position: relative;
+    animation: day-in 1s both;
+    transition-timing-function: ease-in;
+    opacity: 0;
     &.today {
       .weekday {
         border-bottom: 2px solid #258ae0;
