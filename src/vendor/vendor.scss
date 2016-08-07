@@ -53,22 +53,32 @@ body {
   will-change: transform;
   &.open {
     transform: translateX(0%);
-    a {
+    .sd-item {
       transform: translateX(0%);
       transition-delay: 0.1s;
     }
   }
-  a {
+  .sd-item {
     display: block;
     padding: 16px 0 16px 2em;
     font-size: 1.2em;
     color: #21211f;
     transform: translateX(50%);
-    transition: 0.2s all;
+    transition: 0.2s transform;
     will-change: transform;
     &:hover {
       background: #eaeaea;
       box-shadow: 0 2px 1px whitesmoke;
+    }
+    &.active {
+      background-color: #ececec;
+      box-shadow: 0 -1px 0 #d8d8d8;
+      border-top: 1px solid #eaeaea;
+      .sec-menu {
+        opacity: 1;
+        height: auto;
+        margin: 1em auto 0;
+      }
     }
     i {
       margin-right: 0.8em;
@@ -76,6 +86,21 @@ body {
       font-size: 1.3em;
       line-height: 1em;
       position: relative;
+    }
+    .sec-menu {
+      display: flex;
+      opacity: 0;
+      overflow: hidden;
+      height: 0;
+      transition: 0.2s all;
+      transition-timing-function: ease-in;
+      flex-wrap: wrap;
+      margin: 0em auto 0;
+      width: 80%;
+      a {
+        width: 50%;
+        padding: 5px;
+      }
     }
   }
 }

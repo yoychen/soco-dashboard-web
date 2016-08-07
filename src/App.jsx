@@ -36,7 +36,7 @@ var App = React.createClass({
 
         <div className={this.state.toggle?"side-menu open":"side-menu"} >
           <div className="group-menu">
-            <Link className="sd-item" to='/' activeClassName='active'>
+            <Link className="sd-item" to='/index' activeClassName='active'>
               <span><i className="dashboard icon"></i></span>主頁
             </Link>
             <Link className="sd-item" to='/manufacture' activeClassName='active'>
@@ -44,6 +44,14 @@ var App = React.createClass({
             </Link>
             <Link className="sd-item" to='/willonline' activeClassName='active'>
               <span><i className="calendar icon"></i></span>預計上線
+            </Link>
+            <Link className="sd-item" to='/dailywork' activeClassName='active'>
+              <span><i className="outline calendar icon"></i></span>每日工作預排
+              <div className="sec-menu">
+                <a>h02</a>
+                <a>h02</a>
+                <a>h02</a>
+              </div>
             </Link>
           </div>
         </div>
