@@ -1,9 +1,9 @@
 require('./IndexPage.scss');
-var WeekPlan = require('../Components/WeekPlan/WeekPlan');
-var Panel = require('../Components/Panel/Panel');
-var News = require('../Components/Panel/News');
-var Announcement = require('../Components/Panel/Announcement');
-var CheckItem = require('../Components/Panel/CheckItem');
+var WeekPlan = require('../../Components/WeekPlan/WeekPlan');
+var Panel = require('../../Components/Panel/Panel');
+var News = require('../../Components/Panel/News');
+var Announcement = require('../../Components/Panel/Announcement');
+var CheckItem = require('../../Components/Panel/CheckItem');
 var Link = require('react-router').Link;
 
 var IndexPage = React.createClass({

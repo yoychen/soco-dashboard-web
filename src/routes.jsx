@@ -4,9 +4,9 @@ var ReactRouter = require('react-router'),
   Link = ReactRouter.Link;
 
 var App = require('App.jsx');
-var IndexPage = require('Pages/IndexPage.jsx');
-var ManufacturePage = require('Pages/ManufacturePage.jsx');
-var WillOnlinePage = require('Pages/WillOnlinePage.jsx');
+var IndexPage = require('Pages/Index/IndexPage.jsx');
+var ManufacturePage = require('Pages/Manufacture/ManufacturePage.jsx');
+var WillOnlinePage = require('Pages/WillOnline/WillOnlinePage.jsx');
 
 
 var routes = (
