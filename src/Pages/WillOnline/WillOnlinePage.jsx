@@ -21,11 +21,18 @@ var WillOnlinePage = React.createClass({
         <table className="ui celled structured table">
           <thead>
             <tr>
+              <th>順序</th>
               <th>件號</th>
               <th>工序</th>
               <th>盤</th>
-              <th>預定校機人員</th>
-              <th>預定裝夾人員</th>
+              <th>校機人員</th>
+              <th>工作內容</th>
+              <th>執行狀況</th>
+              <th>完工確認</th>
+              <th>裝夾人員</th>
+              <th>工作內容</th>
+              <th>APC人員</th>
+              <th>完工確認</th>
             </tr>
           </thead>
 
