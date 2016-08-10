@@ -74,10 +74,11 @@ body {
       background-color: #ececec;
       box-shadow: 0 -1px 0 #d8d8d8;
       border-top: 1px solid #eaeaea;
-      .sec-menu {
+      .sec-menu,
+      .sec-menu-grid {
         opacity: 1;
         height: auto;
-        margin: 1em auto 0;
+        margin: 1.3em auto 0;
       }
     }
     i {
@@ -87,16 +88,32 @@ body {
       line-height: 1em;
       position: relative;
     }
-    .sec-menu {
-      display: flex;
+    .sec-menu,
+    .sec-menu-grid {
       opacity: 0;
       overflow: hidden;
       height: 0;
       transition: 0.2s all;
       transition-timing-function: ease-in;
+      margin: 0 auto;
+    }
+    .sec-menu {
+      a {
+        display: block;
+        padding: 0 1.3em 13px 0;
+        color: #828282;
+        text-align: right;
+        &:before {
+          content: '>';
+          margin-right: 9px;
+          color: #FF9800;
+        }
+      }
+    }
+    .sec-menu-grid {
+      width: 70%;
+      display: flex;
       flex-wrap: wrap;
-      margin: 0em auto 0;
-      width: 80%;
       a {
         width: 50%;
         padding: 5px;

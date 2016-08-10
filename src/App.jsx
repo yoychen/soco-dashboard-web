@@ -42,15 +42,23 @@ var App = React.createClass({
             <Link className="sd-item" to='/manufacture' activeClassName='active'>
               <span><i className="list icon"></i></span>製令清單
             </Link>
-            <Link className="sd-item" to='/willonline' activeClassName='active'>
-              <span><i className="calendar icon"></i></span>預計上線
-            </Link>
             <Link className="sd-item" to='/dailywork' activeClassName='active'>
               <span><i className="outline calendar icon"></i></span>每日工作預排
+            </Link>
+            <Link className="sd-item" to='/willonline' activeClassName='active'>
+              <span><i className="calendar icon"></i></span>上線狀態
+              <div className="sec-menu-grid">
+                <a>h01</a>
+                <a>h02</a>
+                <a>h03</a>
+              </div>
+            </Link>
+            <Link className="sd-item" to='/willonline' activeClassName='active'>
+              <span><i className="settings icon"></i></span>件號工序管理
               <div className="sec-menu">
-                <a>h02</a>
-                <a>h02</a>
-                <a>h02</a>
+                <a>工序與標準工時</a>
+                <a>件號工序與程式</a>
+                <a>件號工序與刀具</a>
               </div>
             </Link>
           </div>
