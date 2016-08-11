@@ -1,5 +1,5 @@
-.ui.container.dailywork-page {
-  padding: 1.2em 3em;
+.ui.container.step-page {
+  padding: 1.2em 5em;
   table {
     animation: table-in 0.3s both;
     transition-timing-function: ease-in;
@@ -21,6 +21,12 @@
         background: #eae5b8;
         select.dropdown {
           background: #eae5b8;
+        }
+      }
+      td {
+        .ui.toggle.checkbox input:checked~.box:before,
+        .ui.toggle.checkbox input:checked~label:before {
+          background-color: #2185d0 !important;
         }
       }
     }

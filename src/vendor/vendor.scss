@@ -67,7 +67,7 @@ body {
     transition: 0.2s transform;
     will-change: transform;
     &:hover {
-      background: #eaeaea;
+      background: white;
       box-shadow: 0 2px 1px whitesmoke;
     }
     &.active {
@@ -78,7 +78,7 @@ body {
       .sec-menu-grid {
         opacity: 1;
         height: auto;
-        margin: 1.3em auto 0;
+        margin: 1em auto 0;
       }
     }
     i {
@@ -100,14 +100,21 @@ body {
     .sec-menu {
       a {
         display: block;
-        padding: 0 1.3em 13px 0;
+        padding: 10px 0;
+        margin-right: 0.6em;
+        text-align: center;
         color: #828282;
-        text-align: right;
-        &:before {
-          content: '>';
-          margin-right: 9px;
-          color: #FF9800;
+        &.sec-active {
+          background: #dadada;
+          border-radius: 6px;
+          box-shadow: 0 2px 3px #cccccc inset;
+          color: #53575a;
         }
+        // &.sec-active:before {
+        //   content: '>';
+        //   margin-right: 9px;
+        //   color: #FF9800;
+        // }
       }
     }
     .sec-menu-grid {

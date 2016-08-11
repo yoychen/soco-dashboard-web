@@ -10,7 +10,7 @@ var ManufacturePage = React.createClass({
   },
   render: function() {
     return (
-      <div className="ui container fluid manufacture-page">
+      <div className="ui container fluid dailywork-page">
         <div className="ui search">
           <div className="ui icon input">
             <input className="prompt" type="text" placeholder="輸入製令或件號" />

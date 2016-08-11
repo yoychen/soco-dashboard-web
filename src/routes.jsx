@@ -8,6 +8,10 @@ var IndexPage = require('Pages/Index/IndexPage.jsx');
 var ManufacturePage = require('Pages/Manufacture/ManufacturePage.jsx');
 var WillOnlinePage = require('Pages/WillOnline/WillOnlinePage.jsx');
 var DailyWorkPage = require('Pages/DailyWork/DailyWorkPage.jsx');
+var StepHome = require('Pages/StepManager/app.jsx');
+var StepHourPage = require('Pages/StepManager/StepHourPage.jsx');
+var StepProgramPage = require('Pages/StepManager/StepProgramPage.jsx');
+var StepCutleryPage = require('Pages/StepManager/StepCutleryPage.jsx');
 
 
 var routes = (
@@ -17,6 +21,12 @@ var routes = (
     <Route path="manufacture" component={ManufacturePage}/>
     <Route path="willonline" component={WillOnlinePage}/>
     <Route path="dailywork" component={DailyWorkPage}/>
+    <Route path="step"  component={StepHome}>
+      <IndexRoute path="hour" component={StepHourPage}/>
+      <Route path="hour" component={StepHourPage}/>
+      <Route path="program" component={StepProgramPage}/>
+      <Route path="cutlery" component={StepCutleryPage}/>
+    </Route>
   </Route>
 );
 

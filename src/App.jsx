@@ -53,12 +53,12 @@ var App = React.createClass({
                 <a>h03</a>
               </div>
             </Link>
-            <Link className="sd-item" to='/willonline' activeClassName='active'>
+            <Link className="sd-item" to='/step' activeClassName='active'>
               <span><i className="settings icon"></i></span>件號工序管理
               <div className="sec-menu">
-                <a>工序與標準工時</a>
-                <a>件號工序與程式</a>
-                <a>件號工序與刀具</a>
+                <Link to='/step/hour' activeClassName='sec-active' >工序與標準工時</Link>
+                <Link to='/step/program' activeClassName='sec-active' >件號工序與程式</Link>
+                <Link to='/step/cutlery' activeClassName='sec-active' >件號工序與刀具</Link>
               </div>
             </Link>
           </div>
