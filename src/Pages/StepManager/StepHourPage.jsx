@@ -1,7 +1,7 @@
 require('./StepManagerPage.scss');
-const WillOnRow = require('./StepTr');
+const StepRow = require('./StepTr');
 
-var WillOnlinePage = React.createClass({
+var StepHourPage = React.createClass({
   getInitialState: function() {
     return {
 
@@ -21,25 +21,23 @@ var WillOnlinePage = React.createClass({
         <table className="ui celled structured table">
           <thead>
             <tr>
-              <th>順序</th>
               <th>件號</th>
-              <th>工序</th>
-              <th>盤</th>
-              <th>校機人員</th>
-              <th>工作內容</th>
-              <th>執行狀況</th>
-              <th>完工確認</th>
-              <th>裝夾人員</th>
-              <th>工作內容</th>
-              <th>APC人員</th>
-              <th>完工確認</th>
+              <th>工序1</th>
+              <th>標準工時</th>
+              <th>工序2</th>
+              <th>標準工時</th>
+              <th>工序3</th>
+              <th>標準工時</th>
+              <th>工序4</th>
+              <th>標準工時</th>
+              <th>轉後製</th>
             </tr>
           </thead>
 
-          <WillOnRow />
-          <WillOnRow />
-          <WillOnRow />
-          <WillOnRow />
+          <StepRow />
+          <StepRow />
+          <StepRow />
+          <StepRow />
 
 
         </table>
@@ -50,4 +48,4 @@ var WillOnlinePage = React.createClass({
   }
 });
 
-module.exports = WillOnlinePage;
+module.exports = StepHourPage;

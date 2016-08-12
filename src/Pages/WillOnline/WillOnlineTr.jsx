@@ -19,7 +19,7 @@ var WillOnlineTr = React.createClass({
   render: function() {
     const d = this.state.data;
     return (
-      <tbody className={this.props.done?'done':''}>
+      <tbody>
         <tr>
           <td>1</td>
           <td>{d.prod_no}</td>
