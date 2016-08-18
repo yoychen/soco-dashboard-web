@@ -61,6 +61,9 @@ var App = React.createClass({
                 <Link to='/step/cutlery' activeClassName='sec-active' >件號工序與刀具</Link>
               </div>
             </Link>
+            <Link className="sd-item" to='/cutlerygroup' activeClassName='active'>
+              <span><i className="outline table icon"></i></span>刀具群組
+            </Link>
           </div>
         </div>
 

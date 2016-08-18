@@ -12,6 +12,7 @@ var StepHome = require('Pages/StepManager/app.jsx');
 var StepHourPage = require('Pages/StepManager/StepHourPage.jsx');
 var StepProgramPage = require('Pages/StepManager/StepProgramPage.jsx');
 var StepCutleryPage = require('Pages/StepManager/StepCutleryPage.jsx');
+var CutleryGroupPage = require('Pages/CutleryGroup/CutleryGroupPage.jsx');
 
 
 var routes = (
@@ -27,6 +28,7 @@ var routes = (
       <Route path="program" component={StepProgramPage}/>
       <Route path="cutlery" component={StepCutleryPage}/>
     </Route>
+    <Route path="cutlerygroup" component={CutleryGroupPage}/>
   </Route>
 );
 

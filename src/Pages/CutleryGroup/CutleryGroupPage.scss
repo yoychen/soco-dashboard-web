@@ -1,0 +1,120 @@
+.ui.container.cutlery-group-page {
+  padding: 1.2em 5em;
+  padding-right: 9em;
+  table {
+    animation: table-in 0.3s both;
+    transition-timing-function: ease-in;
+    opacity: 0;
+    th {
+      text-align: center;
+      &.sub-title {
+        padding: 7px 0 3px;
+        font-weight: 200;
+      }
+    }
+    tbody {
+      border-bottom: 1px solid rgba(34,36,38,.1);
+      select.ui {
+        background: #f9fafb;
+        border-radius: 3px;
+      }
+      td.working {
+        div {
+          background-color: #91ff91;
+          width: 89%;
+          margin: auto;
+          height: 2em;
+          border-radius: 2px;
+          box-shadow: 0 1.3px 0 0 #909090;
+        }
+        &:nth-child(3) {
+          div {
+            background-color: #91ff91;
+          }
+        }
+        &:nth-child(4) {
+          div {
+            background-color: rgb(94, 255, 226);
+          }
+        }
+        &:nth-child(5) {
+          div {
+            background-color: rgb(112, 182, 255);
+          }
+        }
+        &:nth-child(6) {
+          div {
+            background-color: rgb(255, 121, 119);
+          }
+        }
+        &:nth-child(7) {
+          div {
+            background-color: rgb(243, 255, 99);
+          }
+        }
+        &:nth-child(8) {
+          div {
+            background-color: rgb(215, 157, 255);
+          }
+        }
+      }
+    }
+  }
+}
+.color-pattern {
+  width: 6em;
+  background: #f9fafb;
+  padding: 6px 8px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 6px;
+  position: fixed;
+  right: 15px;
+  top: 25px;
+  div {
+    margin: 5px 0;
+    > div {
+      background-color: #91ff91;
+      width: 89%;
+      margin: auto;
+      height: 2em;
+      border-radius: 2px;
+      padding-left: 12px;
+      line-height: 2em;
+      color: #35393c;
+    }
+  }
+  :nth-child(1) {
+    div {
+      background-color: #91ff91;
+    }
+  }
+  :nth-child(2) {
+    div {
+      background-color: rgb(94, 255, 226);
+    }
+  }
+  :nth-child(3) {
+    div {
+      background-color: rgb(112, 182, 255);
+    }
+  }
+  :nth-child(4) {
+    div {
+      background-color: rgb(255, 121, 119);
+    }
+  }
+  :nth-child(5) {
+    div {
+      background-color: rgb(243, 255, 99);
+    }
+  }
+  :nth-child(6) {
+    div {
+      background-color: rgb(215, 157, 255);
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .ui.container.setting-page {}
+}
